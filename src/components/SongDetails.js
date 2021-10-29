@@ -6,7 +6,7 @@ const SongDetails = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  {
+ return  {
     song: state.selectedSong;
   }
 };
