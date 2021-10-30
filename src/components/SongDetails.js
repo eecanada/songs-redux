@@ -6,9 +6,9 @@ const SongDetails = (props) => {
 };
 
 const mapStateToProps = (state) => {
- return  {
-    song: state.selectedSong;
-  }
+  return {
+    song: state.selectedSong,
+  };
 };
 
 export default connect(mapStateToProps)(SongDetails);
