@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { selectSong } from '../actions';
 
 class SongList extends Component {
-  renderList() {
+  renderList() { 
     return this.props.songs.map((song) => {
       return (
         <div className="item" key={song.title}>
@@ -27,7 +27,6 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return { songs: state.songs };
 };
 
